@@ -10,6 +10,10 @@ target 'Leagues' do
   target 'LeaguesTests' do
     inherit! :search_paths
     # Pods for testing
+    
+    # No version which supports Swift 4.2 for now, pointing on master.
+    pod 'Quick', :git => 'https://github.com/Quick/Quick.git'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git'
   end
 
 end
