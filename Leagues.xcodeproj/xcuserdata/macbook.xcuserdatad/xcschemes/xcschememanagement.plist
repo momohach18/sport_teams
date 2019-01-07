@@ -9,6 +9,24 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Leagues.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FA47712121E34ED500A55DDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA47713521E34ED700A55DDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

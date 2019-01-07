@@ -6,6 +6,8 @@
 //  Copyright © 2019 MAH. All rights reserved.
 //
 
+import Foundation
+
 @testable import Leagues
 
 import Nimble

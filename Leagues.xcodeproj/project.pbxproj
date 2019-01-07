@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DFF8C3456CA072040CA3C9D /* Pods_Leagues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C22F07CCDF760D9DAC666 /* Pods_Leagues.framework */; };
 		6BA23DE4A004CBA28082DBD2 /* Pods_LeaguesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F275018F6F297B8ED54C43 /* Pods_LeaguesTests.framework */; };
+		89F842E7DDAACEE6A2F1E4B9 /* Pods_Leagues_LeaguesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBD643E926CC5F4AEF1E989 /* Pods_Leagues_LeaguesTests.framework */; };
 		FA47712621E34ED500A55DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47712521E34ED500A55DDF /* AppDelegate.swift */; };
 		FA47712821E34ED500A55DDF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47712721E34ED500A55DDF /* HomeViewController.swift */; };
 		FA47712B21E34ED500A55DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA47712921E34ED500A55DDF /* Main.storyboard */; };
@@ -33,6 +34,9 @@
 		FA47716821E3603500A55DDF /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47716721E3603500A55DDF /* PlayerTests.swift */; };
 		FA47716B21E361E500A55DDF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47716A21E361E500A55DDF /* Repository.swift */; };
 		FA47716D21E3637600A55DDF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47716C21E3637600A55DDF /* Result.swift */; };
+		FAF0C45521E3ACB700A333F6 /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45421E3ACB700A333F6 /* JsonFileReader.swift */; };
+		FAF0C45721E3AEE100A333F6 /* LeagueNominal.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C45621E3AEE100A333F6 /* LeagueNominal.json */; };
+		FAF0C45921E3BB6500A333F6 /* LeagueNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C45821E3BB6500A333F6 /* LeagueNullFields.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +51,11 @@
 
 /* Begin PBXFileReference section */
 		1A7C22F07CCDF760D9DAC666 /* Pods_Leagues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leagues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F676D25376C62BBC81EF959 /* Pods-Leagues-LeaguesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leagues-LeaguesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leagues-LeaguesTests/Pods-Leagues-LeaguesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FBD643E926CC5F4AEF1E989 /* Pods_Leagues_LeaguesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leagues_LeaguesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B2E46483EDF3096A244305 /* Pods-LeaguesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaguesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeaguesTests/Pods-LeaguesTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5F275018F6F297B8ED54C43 /* Pods_LeaguesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaguesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE026053AD1C3E326A5C52B8 /* Pods-Leagues-LeaguesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leagues-LeaguesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leagues-LeaguesTests/Pods-Leagues-LeaguesTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC434CBB3F49AA5468377E55 /* Pods-Leagues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leagues.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leagues/Pods-Leagues.release.xcconfig"; sourceTree = "<group>"; };
 		EE6473B9B2A223DCF3C8F3DB /* Pods-LeaguesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaguesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeaguesTests/Pods-LeaguesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F150B2268B50256E7C6E2732 /* Pods-Leagues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leagues.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leagues/Pods-Leagues.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +87,9 @@
 		FA47716721E3603500A55DDF /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
 		FA47716A21E361E500A55DDF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		FA47716C21E3637600A55DDF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FAF0C45421E3ACB700A333F6 /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
+		FAF0C45621E3AEE100A333F6 /* LeagueNominal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LeagueNominal.json; sourceTree = "<group>"; };
+		FAF0C45821E3BB6500A333F6 /* LeagueNullFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LeagueNullFields.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA23DE4A004CBA28082DBD2 /* Pods_LeaguesTests.framework in Frameworks */,
+				89F842E7DDAACEE6A2F1E4B9 /* Pods_Leagues_LeaguesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +120,8 @@
 				EC434CBB3F49AA5468377E55 /* Pods-Leagues.release.xcconfig */,
 				EE6473B9B2A223DCF3C8F3DB /* Pods-LeaguesTests.debug.xcconfig */,
 				64B2E46483EDF3096A244305 /* Pods-LeaguesTests.release.xcconfig */,
+				1F676D25376C62BBC81EF959 /* Pods-Leagues-LeaguesTests.debug.xcconfig */,
+				AE026053AD1C3E326A5C52B8 /* Pods-Leagues-LeaguesTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 			children = (
 				1A7C22F07CCDF760D9DAC666 /* Pods_Leagues.framework */,
 				A5F275018F6F297B8ED54C43 /* Pods_LeaguesTests.framework */,
+				3FBD643E926CC5F4AEF1E989 /* Pods_Leagues_LeaguesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,11 +174,12 @@
 		FA47713921E34ED700A55DDF /* LeaguesTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA47713A21E34ED700A55DDF /* LeagueTests.swift */,
-				FA47715721E35EC900A55DDF /* TeamTests.swift */,
-				FA47716721E3603500A55DDF /* PlayerTests.swift */,
-				FA47716521E3601B00A55DDF /* AutocompleteTests.swift */,
+				FAF0C45021E3AA7200A333F6 /* Leagues */,
+				FAF0C45121E3AA8100A333F6 /* Teams */,
+				FAF0C45221E3AA9500A333F6 /* Players */,
+				FAF0C45321E3AA9E00A333F6 /* Autocomplete */,
 				FA47713C21E34ED700A55DDF /* Info.plist */,
+				FAF0C45421E3ACB700A333F6 /* JsonFileReader.swift */,
 			);
 			path = LeaguesTests;
 			sourceTree = "<group>";
@@ -220,6 +235,40 @@
 				FA47716C21E3637600A55DDF /* Result.swift */,
 			);
 			path = Commun;
+			sourceTree = "<group>";
+		};
+		FAF0C45021E3AA7200A333F6 /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				FA47713A21E34ED700A55DDF /* LeagueTests.swift */,
+				FAF0C45621E3AEE100A333F6 /* LeagueNominal.json */,
+				FAF0C45821E3BB6500A333F6 /* LeagueNullFields.json */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		FAF0C45121E3AA8100A333F6 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				FA47715721E35EC900A55DDF /* TeamTests.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		FAF0C45221E3AA9500A333F6 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				FA47716721E3603500A55DDF /* PlayerTests.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		FAF0C45321E3AA9E00A333F6 /* Autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				FA47716521E3601B00A55DDF /* AutocompleteTests.swift */,
+			);
+			path = Autocomplete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF0C45921E3BB6500A333F6 /* LeagueNullFields.json in Resources */,
+				FAF0C45721E3AEE100A333F6 /* LeagueNominal.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +388,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LeaguesTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Leagues-LeaguesTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -374,7 +425,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LeaguesTests/Pods-LeaguesTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Leagues-LeaguesTests/Pods-Leagues-LeaguesTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -387,7 +438,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeaguesTests/Pods-LeaguesTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Leagues-LeaguesTests/Pods-Leagues-LeaguesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -423,6 +474,7 @@
 			files = (
 				FA47716821E3603500A55DDF /* PlayerTests.swift in Sources */,
 				FA47716621E3601B00A55DDF /* AutocompleteTests.swift in Sources */,
+				FAF0C45521E3ACB700A333F6 /* JsonFileReader.swift in Sources */,
 				FA47715821E35EC900A55DDF /* TeamTests.swift in Sources */,
 				FA47713B21E34ED700A55DDF /* LeagueTests.swift in Sources */,
 			);
@@ -612,7 +664,7 @@
 		};
 		FA47714321E34ED700A55DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE6473B9B2A223DCF3C8F3DB /* Pods-LeaguesTests.debug.xcconfig */;
+			baseConfigurationReference = 1F676D25376C62BBC81EF959 /* Pods-Leagues-LeaguesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -633,7 +685,7 @@
 		};
 		FA47714421E34ED700A55DDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64B2E46483EDF3096A244305 /* Pods-LeaguesTests.release.xcconfig */;
+			baseConfigurationReference = AE026053AD1C3E326A5C52B8 /* Pods-Leagues-LeaguesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
