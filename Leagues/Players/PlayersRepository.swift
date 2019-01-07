@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol PlayersRepository {
+    func getElements(with teamIdentifier: String,
+                     completion: (Result<[PlayerEntity], RepositoryError>) -> ())
+}

@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+protocol TeamsPresenterDelegate {
+    
+}
+
+protocol TeamsPresenter {
+    var delegate: TeamsPresenterDelegate? { get }
+    var view: TeamsView? { get }
+    
+    var elements: [TeamEntity] { get set }
+    
+    //MARK: Interactions
+    func didSelectTeam(with identifier: String)
+}

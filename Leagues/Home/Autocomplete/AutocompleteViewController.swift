@@ -6,4 +6,12 @@
 //  Copyright © 2019 MAH. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol AutocompleteView {
+    func show(elements: [AutocompleteModel])
+}
+
+class AutocompleteViewController: UIViewController {
+    
+}

@@ -31,7 +31,7 @@ class LeagueSpec: QuickSpec {
                 }
             }
             
-            context("null fields") {
+            context("null optional fields") {
                 let leagueJson = JsonFileReaded(fileName: "LeagueNullFields").data
                 let league = try? JSONDecoder().decode(LeagueEntity.self, from: leagueJson)
                 it("should be non nil") {

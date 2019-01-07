@@ -19,7 +19,7 @@
 		FA47714A21E356A100A55DDF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47714921E356A100A55DDF /* HomePresenter.swift */; };
 		FA47714C21E35BA900A55DDF /* AutocompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47714B21E35BA900A55DDF /* AutocompleteViewController.swift */; };
 		FA47714E21E35BB700A55DDF /* AutocompletePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47714D21E35BB700A55DDF /* AutocompletePresenter.swift */; };
-		FA47715021E35BDE00A55DDF /* TemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47714F21E35BDE00A55DDF /* TemsViewController.swift */; };
+		FA47715021E35BDE00A55DDF /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47714F21E35BDE00A55DDF /* TeamsViewController.swift */; };
 		FA47715221E35BEE00A55DDF /* TeamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715121E35BEE00A55DDF /* TeamsPresenter.swift */; };
 		FA47715421E35C0B00A55DDF /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715321E35C0B00A55DDF /* PlayersViewController.swift */; };
 		FA47715621E35C2300A55DDF /* PlayersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715521E35C2300A55DDF /* PlayersPresenter.swift */; };
@@ -27,7 +27,7 @@
 		FA47715A21E35F4500A55DDF /* TeamEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715921E35F4500A55DDF /* TeamEntity.swift */; };
 		FA47715C21E35F7000A55DDF /* TeamsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715B21E35F7000A55DDF /* TeamsRepository.swift */; };
 		FA47715E21E35F9D00A55DDF /* LeagueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715D21E35F9D00A55DDF /* LeagueEntity.swift */; };
-		FA47716021E35FBB00A55DDF /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715F21E35FBB00A55DDF /* LeagueRepository.swift */; };
+		FA47716021E35FBB00A55DDF /* LeaguesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47715F21E35FBB00A55DDF /* LeaguesRepository.swift */; };
 		FA47716221E35FCE00A55DDF /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47716121E35FCE00A55DDF /* PlayerEntity.swift */; };
 		FA47716421E35FDB00A55DDF /* PlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47716321E35FDB00A55DDF /* PlayersRepository.swift */; };
 		FA47716621E3601B00A55DDF /* AutocompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47716521E3601B00A55DDF /* AutocompleteTests.swift */; };
@@ -37,6 +37,8 @@
 		FAF0C45521E3ACB700A333F6 /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45421E3ACB700A333F6 /* JsonFileReader.swift */; };
 		FAF0C45721E3AEE100A333F6 /* LeagueNominal.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C45621E3AEE100A333F6 /* LeagueNominal.json */; };
 		FAF0C45921E3BB6500A333F6 /* LeagueNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C45821E3BB6500A333F6 /* LeagueNullFields.json */; };
+		FAF0C45B21E3DC8E00A333F6 /* AutocompleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45A21E3DC8E00A333F6 /* AutocompleteModel.swift */; };
+		FAF0C45D21E3E8DE00A333F6 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,7 @@
 		FA47714921E356A100A55DDF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		FA47714B21E35BA900A55DDF /* AutocompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteViewController.swift; sourceTree = "<group>"; };
 		FA47714D21E35BB700A55DDF /* AutocompletePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompletePresenter.swift; sourceTree = "<group>"; };
-		FA47714F21E35BDE00A55DDF /* TemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemsViewController.swift; sourceTree = "<group>"; };
+		FA47714F21E35BDE00A55DDF /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		FA47715121E35BEE00A55DDF /* TeamsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsPresenter.swift; sourceTree = "<group>"; };
 		FA47715321E35C0B00A55DDF /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		FA47715521E35C2300A55DDF /* PlayersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersPresenter.swift; sourceTree = "<group>"; };
@@ -80,7 +82,7 @@
 		FA47715921E35F4500A55DDF /* TeamEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamEntity.swift; sourceTree = "<group>"; };
 		FA47715B21E35F7000A55DDF /* TeamsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRepository.swift; sourceTree = "<group>"; };
 		FA47715D21E35F9D00A55DDF /* LeagueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEntity.swift; sourceTree = "<group>"; };
-		FA47715F21E35FBB00A55DDF /* LeagueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepository.swift; sourceTree = "<group>"; };
+		FA47715F21E35FBB00A55DDF /* LeaguesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesRepository.swift; sourceTree = "<group>"; };
 		FA47716121E35FCE00A55DDF /* PlayerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
 		FA47716321E35FDB00A55DDF /* PlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersRepository.swift; sourceTree = "<group>"; };
 		FA47716521E3601B00A55DDF /* AutocompleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteTests.swift; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		FAF0C45421E3ACB700A333F6 /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
 		FAF0C45621E3AEE100A333F6 /* LeagueNominal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LeagueNominal.json; sourceTree = "<group>"; };
 		FAF0C45821E3BB6500A333F6 /* LeagueNullFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LeagueNullFields.json; sourceTree = "<group>"; };
+		FAF0C45A21E3DC8E00A333F6 /* AutocompleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteModel.swift; sourceTree = "<group>"; };
+		FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				FA47716921E361B100A55DDF /* Commun */,
-				FA47714621E3555300A55DDF /* Players */,
 				FA47714521E3553300A55DDF /* Home */,
+				FA47714621E3555300A55DDF /* Players */,
 				FA47712521E34ED500A55DDF /* AppDelegate.swift */,
 				FA47712921E34ED500A55DDF /* Main.storyboard */,
 				FA47712C21E34ED700A55DDF /* Assets.xcassets */,
@@ -190,7 +194,7 @@
 				FA47712721E34ED500A55DDF /* HomeViewController.swift */,
 				FA47714921E356A100A55DDF /* HomePresenter.swift */,
 				FA47715D21E35F9D00A55DDF /* LeagueEntity.swift */,
-				FA47715F21E35FBB00A55DDF /* LeagueRepository.swift */,
+				FA47715F21E35FBB00A55DDF /* LeaguesRepository.swift */,
 				FA47714721E355E900A55DDF /* Autocomplete */,
 				FA47714821E355F800A55DDF /* Teams */,
 			);
@@ -213,6 +217,7 @@
 			children = (
 				FA47714B21E35BA900A55DDF /* AutocompleteViewController.swift */,
 				FA47714D21E35BB700A55DDF /* AutocompletePresenter.swift */,
+				FAF0C45A21E3DC8E00A333F6 /* AutocompleteModel.swift */,
 			);
 			path = Autocomplete;
 			sourceTree = "<group>";
@@ -220,7 +225,7 @@
 		FA47714821E355F800A55DDF /* Teams */ = {
 			isa = PBXGroup;
 			children = (
-				FA47714F21E35BDE00A55DDF /* TemsViewController.swift */,
+				FA47714F21E35BDE00A55DDF /* TeamsViewController.swift */,
 				FA47715121E35BEE00A55DDF /* TeamsPresenter.swift */,
 				FA47715921E35F4500A55DDF /* TeamEntity.swift */,
 				FA47715B21E35F7000A55DDF /* TeamsRepository.swift */,
@@ -233,6 +238,7 @@
 			children = (
 				FA47716A21E361E500A55DDF /* Repository.swift */,
 				FA47716C21E3637600A55DDF /* Result.swift */,
+				FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */,
 			);
 			path = Commun;
 			sourceTree = "<group>";
@@ -455,9 +461,11 @@
 				FA47715621E35C2300A55DDF /* PlayersPresenter.swift in Sources */,
 				FA47716421E35FDB00A55DDF /* PlayersRepository.swift in Sources */,
 				FA47715E21E35F9D00A55DDF /* LeagueEntity.swift in Sources */,
-				FA47715021E35BDE00A55DDF /* TemsViewController.swift in Sources */,
+				FAF0C45D21E3E8DE00A333F6 /* RepositoryError.swift in Sources */,
+				FA47715021E35BDE00A55DDF /* TeamsViewController.swift in Sources */,
 				FA47715221E35BEE00A55DDF /* TeamsPresenter.swift in Sources */,
-				FA47716021E35FBB00A55DDF /* LeagueRepository.swift in Sources */,
+				FAF0C45B21E3DC8E00A333F6 /* AutocompleteModel.swift in Sources */,
+				FA47716021E35FBB00A55DDF /* LeaguesRepository.swift in Sources */,
 				FA47716221E35FCE00A55DDF /* PlayerEntity.swift in Sources */,
 				FA47716B21E361E500A55DDF /* Repository.swift in Sources */,
 				FA47715A21E35F4500A55DDF /* TeamEntity.swift in Sources */,

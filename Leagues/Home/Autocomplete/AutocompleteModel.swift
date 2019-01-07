@@ -1,5 +1,5 @@
 //
-//  TemsViewController.swift
+//  AutocompleteModel.swift
 //  Leagues
 //
 //  Created by Macbook on 07/01/2019.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct AutocompleteModel {
+    let text: String
+}

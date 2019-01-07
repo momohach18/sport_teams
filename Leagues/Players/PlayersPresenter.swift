@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+protocol PlayersPresenterDelegate {
+    
+}
+
+protocol PlayersPresenter: class {
+    var delegate: PlayersPresenterDelegate? { get }
+    var leaguesRepository: PlayersRepository { get }
+    var view: HomeView? { get }
+    //MARK: Interactions
+    func didSelectPlayer(with identifier: String)
+}

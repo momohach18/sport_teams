@@ -1,5 +1,5 @@
 //
-//  PlayersViewController.swift
+//  TeamsViewController.swift
 //  Leagues
 //
 //  Created by Macbook on 07/01/2019.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-protocol PlayersView {
-    var teams: [PlayerViewModel] { get set }
+protocol TeamsView {
+    var teams: [TeamViewModel] { get set }
     func setLoadingIndicator(visible: Bool)
 }
 
-struct PlayerViewModel {
+struct TeamViewModel {
     
 }
 
-class PlayersViewController: UIViewController {
+class TeamsViewController: UIViewController {
     
 }
