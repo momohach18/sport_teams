@@ -12,10 +12,10 @@ protocol TeamsPresenterDelegate {
     func didSelectTeam(with identifier: String)
 }
 
-protocol TeamsPresenter {
-    var delegate: TeamsPresenterDelegate? { get }
-    var view: TeamsView? { get }
-    var teamsRepository: TeamsRepository { get }
+protocol TeamsPresenter: class {
+    var delegate: TeamsPresenterDelegate? { get set }
+    var view: TeamsView? { get set }
+    var teamsRepository: TeamsRepository { get set }
     var elements: [TeamEntity] { get set }
     
     func set(leagueIdentifier: String?)
@@ -49,6 +49,7 @@ class TeamsPresenterImplementation: TeamsPresenter {
         }
         self.leagueIdentifier = leagueIdentifier
         elements = [TeamEntity]()
+        view?.setLoadingIndicator(visible: true)
         teamsRepository.getElements(with: leagueIdentifier) { [weak self] result in
             self?.view?.setLoadingIndicator(visible: false)
             switch result {

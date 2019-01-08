@@ -9,12 +9,12 @@
 import Foundation
 
 protocol AutocompletePresenterDelegate {
-    func didSelectElement(with identifier: String)
+    func didSelectSearchElement(with identifier: String)
 }
 
 protocol AutocompletePresenter: class {
-    var delegate: AutocompletePresenterDelegate? { get }
-    var view: AutocompleteView? { get }
+    var delegate: AutocompletePresenterDelegate? { get set }
+    var view: AutocompleteView? { get set }
     
     func set(elements: [AutocompleteModel])
     func set(currentText: String)
@@ -29,9 +29,10 @@ class AutocompletePresenterImplementation: AutocompletePresenter {
     weak var view: AutocompleteView?
     
     private var elements = [AutocompleteModel]()
-    
+    private var currentText = ""
     func set(elements: [AutocompleteModel]) {
         self.elements = elements
+        self.set(currentText: currentText)
     }
     
     func set(currentText: String) {
@@ -45,6 +46,6 @@ class AutocompletePresenterImplementation: AutocompletePresenter {
     
     func didSelectElement(with string: String) {
         guard let element = elements.first(where: { $0.text == string}) else { return }
-        self.delegate?.didSelectElement(with: element.identifier)
+        self.delegate?.didSelectSearchElement(with: element.identifier)
     }
 }

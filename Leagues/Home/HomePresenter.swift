@@ -14,12 +14,14 @@ protocol HomePresenter: class {
     var leaguesRepository: LeaguesRepository { get }
     var view: HomeView? { get }
     
-    //MARK: Interactions
+    //MARK: Actions from view
     func didLoadView()
     func didTapCancel()
+    func set(searchText: String)
+    func didStartEditingSearchText()
 }
 
-class HomePresenterImplementation {
+class HomePresenterImplementation: HomePresenter {
     var autocompletePresenter: AutocompletePresenter
     var teamsPresenter: TeamsPresenter
     var leaguesRepository: LeaguesRepository
@@ -34,10 +36,35 @@ class HomePresenterImplementation {
         self.teamsPresenter = teamsPresenter
         self.leaguesRepository = leaguesRepository
         self.view = view
+        self.teamsPresenter.delegate = self
+        self.autocompletePresenter.delegate = self
+    }
+    
+    private func set(selectedLeague: LeagueEntity) {
+        teamsPresenter.set(leagueIdentifier: selectedLeague.identifier)
     }
 }
 
-extension HomePresenter {
+//MARK:- AutocompletePresenterDelegate
+extension HomePresenterImplementation: AutocompletePresenterDelegate {
+    func didSelectSearchElement(with identifier: String) {
+        guard let selectedLeague = leagues.first(where: { $0.identifier == identifier }) else { return }
+        set(selectedLeague: selectedLeague)
+        view?.set(searchBarText: selectedLeague.name)
+        view?.showTeamsView()
+    }
+}
+
+
+//MARK:- TeamsPresenterDelegate
+extension HomePresenterImplementation: TeamsPresenterDelegate {
+    func didSelectTeam(with identifier: String) {
+        
+    }
+}
+
+//MARK:- Actions from view
+extension HomePresenterImplementation {
     func didLoadView() {
         view?.setLoadingIndicator(visible: true)
         leaguesRepository.getAllElements { [weak self] result in
@@ -52,11 +79,28 @@ extension HomePresenter {
     }
     
     private func handleRecieved(leagues: [LeagueEntity]) {
+        self.leagues = leagues
         autocompletePresenter.set(elements: leagues.map{ AutocompleteModel(text: $0.name,
                                                                         identifier: $0.identifier) })
     }
     
     private func handle(error: RepositoryError) {
         
+    }
+    
+    func didTapCancel() {
+        view?.showTeamsView()
+    }
+    
+    func set(searchText: String) {
+        autocompletePresenter.set(currentText: searchText)
+        guard let selectedLeague = leagues.first(where: { $0.name.lowercased() == searchText.lowercased() }) else {
+            return
+        }
+        set(selectedLeague: selectedLeague)
+    }
+    
+    func didStartEditingSearchText() {
+        view?.showAutocompleteView()
     }
 }

@@ -19,3 +19,7 @@ struct TeamEntity: Decodable {
         case name = "strTeam"
     }
 }
+
+struct TeamsResponse: Decodable {
+    let teams: [TeamEntity]
+}

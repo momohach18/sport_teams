@@ -8,5 +8,9 @@
 
 import Foundation
 
-struct PlayerEntity {
+struct PlayerEntity: Decodable {
+}
+
+struct PlayersResponse: Decodable {
+    let players: [PlayerEntity]
 }

@@ -44,6 +44,8 @@
 		FAF0C46321E4BAB100A333F6 /* TeamNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */; };
 		FAF0C46521E4C0D500A333F6 /* TeamPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */; };
 		FAF0C46721E4C11F00A333F6 /* TeamsTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */; };
+		FAF0C46921E51B8000A333F6 /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46821E51B8000A333F6 /* TeamCollectionViewCell.swift */; };
+		FAF0C46B21E553D600A333F6 /* UIViewController+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TeamNullFields.json; sourceTree = "<group>"; };
 		FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPresenterTests.swift; sourceTree = "<group>"; };
 		FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTestImplementations.swift; sourceTree = "<group>"; };
+		FAF0C46821E51B8000A333F6 /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,7 @@
 				FA47715121E35BEE00A55DDF /* TeamsPresenter.swift */,
 				FA47715921E35F4500A55DDF /* TeamEntity.swift */,
 				FA47715B21E35F7000A55DDF /* TeamsRepository.swift */,
+				FAF0C46821E51B8000A333F6 /* TeamCollectionViewCell.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				FA47716A21E361E500A55DDF /* Repository.swift */,
 				FA47716C21E3637600A55DDF /* Result.swift */,
 				FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */,
+				FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */,
 			);
 			path = Commun;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 				FA47711E21E34ED500A55DDF /* Sources */,
 				FA47711F21E34ED500A55DDF /* Frameworks */,
 				FA47712021E34ED500A55DDF /* Resources */,
+				6B278F4E07A9EF6C2B191E87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,6 +425,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6B278F4E07A9EF6C2B191E87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Leagues/Pods-Leagues-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Leagues/Pods-Leagues-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A028F162250A7890BF6D6AEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +482,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Leagues-LeaguesTests/Pods-Leagues-LeaguesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -456,6 +492,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -480,6 +519,7 @@
 				FA47715E21E35F9D00A55DDF /* LeagueEntity.swift in Sources */,
 				FAF0C45D21E3E8DE00A333F6 /* RepositoryError.swift in Sources */,
 				FA47715021E35BDE00A55DDF /* TeamsViewController.swift in Sources */,
+				FAF0C46B21E553D600A333F6 /* UIViewController+Loader.swift in Sources */,
 				FA47715221E35BEE00A55DDF /* TeamsPresenter.swift in Sources */,
 				FAF0C45B21E3DC8E00A333F6 /* AutocompleteModel.swift in Sources */,
 				FA47716021E35FBB00A55DDF /* LeaguesRepository.swift in Sources */,
@@ -488,6 +528,7 @@
 				FA47715A21E35F4500A55DDF /* TeamEntity.swift in Sources */,
 				FA47715421E35C0B00A55DDF /* PlayersViewController.swift in Sources */,
 				FA47716D21E3637600A55DDF /* Result.swift in Sources */,
+				FAF0C46921E51B8000A333F6 /* TeamCollectionViewCell.swift in Sources */,
 				FA47712621E34ED500A55DDF /* AppDelegate.swift in Sources */,
 				FA47714E21E35BB700A55DDF /* AutocompletePresenter.swift in Sources */,
 			);

@@ -21,3 +21,7 @@ struct LeagueEntity: Decodable {
         case alternativeName = "strLeagueAlternate"
     }
 }
+
+struct LeaguesResponse: Decodable {
+    let leagues: [LeagueEntity]
+}
