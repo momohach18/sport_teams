@@ -40,6 +40,8 @@
 		FAF0C45B21E3DC8E00A333F6 /* AutocompleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45A21E3DC8E00A333F6 /* AutocompleteModel.swift */; };
 		FAF0C45D21E3E8DE00A333F6 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */; };
 		FAF0C45F21E49C0400A333F6 /* AutocompleteTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45E21E49C0400A333F6 /* AutocompleteTestImplementations.swift */; };
+		FAF0C46121E4B9F000A333F6 /* TeamNominal.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46021E4B9F000A333F6 /* TeamNominal.json */; };
+		FAF0C46321E4BAB100A333F6 /* TeamNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		FAF0C45A21E3DC8E00A333F6 /* AutocompleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteModel.swift; sourceTree = "<group>"; };
 		FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 		FAF0C45E21E49C0400A333F6 /* AutocompleteTestImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteTestImplementations.swift; sourceTree = "<group>"; };
+		FAF0C46021E4B9F000A333F6 /* TeamNominal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TeamNominal.json; sourceTree = "<group>"; };
+		FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TeamNullFields.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				FA47715721E35EC900A55DDF /* TeamTests.swift */,
+				FAF0C46021E4B9F000A333F6 /* TeamNominal.json */,
+				FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -374,7 +380,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF0C46321E4BAB100A333F6 /* TeamNullFields.json in Resources */,
 				FAF0C45921E3BB6500A333F6 /* LeagueNullFields.json in Resources */,
+				FAF0C46121E4B9F000A333F6 /* TeamNominal.json in Resources */,
 				FAF0C45721E3AEE100A333F6 /* LeagueNominal.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,14 @@
 
 import Foundation
 
-struct TeamEntity {
+struct TeamEntity: Decodable {
+    let identifier: String
+    let badgeUrl: String?
+    let name: String?
     
+    enum CodingKeys: String, CodingKey {
+        case identifier = "idTeam"
+        case badgeUrl = "strTeamBadge"
+        case name = "strTeam"
+    }
 }
