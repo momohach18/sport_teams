@@ -9,23 +9,42 @@
 import Foundation
 
 protocol AutocompletePresenterDelegate {
-    func didSelect(model: AutocompleteModel)
+    func didSelectElement(with identifier: String)
 }
 
 protocol AutocompletePresenter: class {
     var delegate: AutocompletePresenterDelegate? { get }
     var view: AutocompleteView? { get }
     
-    var elements: [AutocompleteModel] { get set }
-    
+    func set(elements: [AutocompleteModel])
     func set(currentText: String)
     
     //MARK: Interactions
-    func didSelectElement(at position: UInt)
+    func didSelectElement(with string: String)
 }
 
-extension AutocompletePresenter {
+class AutocompletePresenterImplementation: AutocompletePresenter {
+    var delegate: AutocompletePresenterDelegate?
+    
+    weak var view: AutocompleteView?
+    
+    private var elements = [AutocompleteModel]()
+    
+    func set(elements: [AutocompleteModel]) {
+        self.elements = elements
+    }
+    
     func set(currentText: String) {
-        view?.show(elements: self.elements.filter { $0.text.hasPrefix(currentText) })
+        guard !currentText.isEmpty else {
+            view?.show(elements: self.elements.map { $0.text })
+            return
+        }
+        view?.show(elements: self.elements.filter { $0.text.lowercased().hasPrefix(currentText.lowercased()) }
+                                          .map { $0.text })
+    }
+    
+    func didSelectElement(with string: String) {
+        guard let element = elements.first(where: { $0.text == string}) else { return }
+        self.delegate?.didSelectElement(with: element.identifier)
     }
 }

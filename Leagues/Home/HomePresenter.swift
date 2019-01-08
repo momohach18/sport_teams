@@ -52,7 +52,8 @@ extension HomePresenter {
     }
     
     private func handleRecieved(leagues: [LeagueEntity]) {
-        autocompletePresenter.elements = leagues.map{ AutocompleteModel(text: $0.name) }
+        autocompletePresenter.set(elements: leagues.map{ AutocompleteModel(text: $0.name,
+                                                                        identifier: $0.identifier) })
     }
     
     private func handle(error: RepositoryError) {

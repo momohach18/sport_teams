@@ -8,8 +8,8 @@
 
 import UIKit
 
-protocol AutocompleteView {
-    func show(elements: [AutocompleteModel])
+protocol AutocompleteView: class {
+    func show(elements: [String])
 }
 
 class AutocompleteViewController: UIViewController {

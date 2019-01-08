@@ -10,4 +10,5 @@ import Foundation
 
 struct AutocompleteModel {
     let text: String
+    let identifier: String
 }
