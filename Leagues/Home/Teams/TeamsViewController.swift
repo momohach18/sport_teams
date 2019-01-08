@@ -9,12 +9,12 @@
 import UIKit
 
 protocol TeamsView {
-    var teams: [TeamViewModel] { get set }
+    func show(teams: [TeamViewModel])
     func setLoadingIndicator(visible: Bool)
 }
 
 struct TeamViewModel {
-    
+    let imageUrlString: String
 }
 
 class TeamsViewController: UIViewController {

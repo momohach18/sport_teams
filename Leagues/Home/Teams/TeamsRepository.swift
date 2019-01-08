@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol TeamsRepository {
+    func getElements(with leagueIdentifier: String,
+                     completion: (Result<[TeamEntity], RepositoryError>) -> ())
+}

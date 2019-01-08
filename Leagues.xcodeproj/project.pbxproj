@@ -42,6 +42,8 @@
 		FAF0C45F21E49C0400A333F6 /* AutocompleteTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C45E21E49C0400A333F6 /* AutocompleteTestImplementations.swift */; };
 		FAF0C46121E4B9F000A333F6 /* TeamNominal.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46021E4B9F000A333F6 /* TeamNominal.json */; };
 		FAF0C46321E4BAB100A333F6 /* TeamNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */; };
+		FAF0C46521E4C0D500A333F6 /* TeamPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */; };
+		FAF0C46721E4C11F00A333F6 /* TeamsTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		FAF0C45E21E49C0400A333F6 /* AutocompleteTestImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteTestImplementations.swift; sourceTree = "<group>"; };
 		FAF0C46021E4B9F000A333F6 /* TeamNominal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TeamNominal.json; sourceTree = "<group>"; };
 		FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TeamNullFields.json; sourceTree = "<group>"; };
+		FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPresenterTests.swift; sourceTree = "<group>"; };
+		FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTestImplementations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,8 @@
 				FA47715721E35EC900A55DDF /* TeamTests.swift */,
 				FAF0C46021E4B9F000A333F6 /* TeamNominal.json */,
 				FAF0C46221E4BAB100A333F6 /* TeamNullFields.json */,
+				FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */,
+				FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -495,6 +501,8 @@
 				FA47716621E3601B00A55DDF /* AutocompleteTests.swift in Sources */,
 				FAF0C45521E3ACB700A333F6 /* JsonFileReader.swift in Sources */,
 				FA47715821E35EC900A55DDF /* TeamTests.swift in Sources */,
+				FAF0C46721E4C11F00A333F6 /* TeamsTestImplementations.swift in Sources */,
+				FAF0C46521E4C0D500A333F6 /* TeamPresenterTests.swift in Sources */,
 				FA47713B21E34ED700A55DDF /* LeagueTests.swift in Sources */,
 				FAF0C45F21E49C0400A333F6 /* AutocompleteTestImplementations.swift in Sources */,
 			);
