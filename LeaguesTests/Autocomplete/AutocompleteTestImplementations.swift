@@ -25,9 +25,9 @@ class AutocompletionViewTestImplementation: AutocompleteView {
     }
 }
 
-class AutocompletionPresenterDelegateImplementation: AutocompletePresenterDelegate {
+class AutocompletionPresenterDelegateImplementation: AutocompletePresenterDelegate {    
     var selectedIdentifier: String?
-    func didSelectElement(with identifier: String) {
+    func didSelectSearchElement(with identifier: String) {
         selectedIdentifier = identifier
     }
 }
