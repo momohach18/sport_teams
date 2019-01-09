@@ -118,6 +118,7 @@
 		FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTestImplementations.swift; sourceTree = "<group>"; };
 		FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersPresenterTests.swift; sourceTree = "<group>"; };
 		FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAF0C47621E5927B00A333F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +173,7 @@
 				FA47712321E34ED500A55DDF /* Products */,
 				56485BC07B1B3594FDFDE093 /* Pods */,
 				6F4CD21C2BA122DFE7D99711 /* Frameworks */,
+				FAF0C47621E5927B00A333F6 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
