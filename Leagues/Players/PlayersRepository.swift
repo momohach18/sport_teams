@@ -27,7 +27,7 @@ class PlayersRepositoryImplementation: PlayersRepository {
                 return
             }
             let playersResponse = try? JSONDecoder().decode(PlayersResponse.self, from: data)
-            guard let players = playersResponse?.players else {
+            guard let players = playersResponse?.player else {
                 completion(Result.error(RepositoryError.technical))
                 return
             }

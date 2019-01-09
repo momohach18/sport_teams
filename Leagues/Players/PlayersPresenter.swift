@@ -17,7 +17,7 @@ protocol PlayersPresenter: class {
     var playersRepository: PlayersRepository { get set }
     var players: [PlayerEntity] { get set }
     var view: PlayersView? { get set }
-    func set(teamIdentifier: String?)
+    func didLoadView()
     //MARK: View Actions
     func didSelectPlayer(at position: Int)
 }
@@ -31,25 +31,14 @@ class PlayersPresenterImplementation: PlayersPresenter {
     
     var view: PlayersView?
     
-    private var teamIdentifier: String?
+    private var teamIdentifier: String
     
-    init(playersRepository: PlayersRepository) {
+    init(teamIdentifier: String, playersRepository: PlayersRepository) {
         self.playersRepository = playersRepository
+        self.teamIdentifier = teamIdentifier
     }
     
-    func set(teamIdentifier: String?) {
-        guard let teamIdentifier = teamIdentifier else {
-            // No league selected. Show empty list.
-            players = [PlayerEntity]()
-            view?.show(players: [])
-            return
-        }
-        guard teamIdentifier != self.teamIdentifier || players.isEmpty else {
-            // Return if the current team is the same that fetched elements
-            return
-        }
-        self.teamIdentifier = teamIdentifier
-        players = [PlayerEntity]()
+    func didLoadView() {
         view?.setLoadingIndicator(visible: true)
         playersRepository.getElements(with: teamIdentifier) { [weak self] result in
             self?.view?.setLoadingIndicator(visible: false)
@@ -66,10 +55,11 @@ class PlayersPresenterImplementation: PlayersPresenter {
         self.players = players
         view?.show(players: players.map{ PlayerViewModel(identifier: $0.identifier,
                                                          name: $0.name,
+                                                         position: $0.position,
                                                          birthDate: $0.birthDate,
                                                          signingAmout: $0.signingAmout,
-                                                         headImageUrlString: $0.headImageUrlString,
-                                                         thumbnailImageUrlString: $0.thumbnailImageUrlString) } )
+                                                         imageUrlString: $0.headImageUrlString ?? $0.thumbnailImageUrlString
+                                                         ) } )
         
     }
     

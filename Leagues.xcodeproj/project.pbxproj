@@ -50,6 +50,7 @@
 		FAF0C46F21E55F6A00A333F6 /* PlayerNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */; };
 		FAF0C47121E566F200A333F6 /* PlayerTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */; };
 		FAF0C47321E56FC800A333F6 /* PlayersPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */; };
+		FAF0C47521E57BD900A333F6 /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlayerNullFields.json; sourceTree = "<group>"; };
 		FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTestImplementations.swift; sourceTree = "<group>"; };
 		FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersPresenterTests.swift; sourceTree = "<group>"; };
+		FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				FA47715521E35C2300A55DDF /* PlayersPresenter.swift */,
 				FA47716121E35FCE00A55DDF /* PlayerEntity.swift */,
 				FA47716321E35FDB00A55DDF /* PlayersRepository.swift */,
+				FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				FAF0C46921E51B8000A333F6 /* TeamCollectionViewCell.swift in Sources */,
 				FA47712621E34ED500A55DDF /* AppDelegate.swift in Sources */,
 				FA47714E21E35BB700A55DDF /* AutocompletePresenter.swift in Sources */,
+				FAF0C47521E57BD900A333F6 /* PlayerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

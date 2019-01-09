@@ -36,5 +36,9 @@ class TeamsViewController: UIViewController, TeamsView, UICollectionViewDelegate
         cell?.configure(with: teams[indexPath.row])
         return cell ?? UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.didSelectTeam(at: indexPath.row)
+    }
 }
 

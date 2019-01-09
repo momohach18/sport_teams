@@ -16,21 +16,15 @@ class PlayersPresenterSpec: QuickSpec {
         describe("PlayersPresenter") {
             let view = PlayersViewTestImplementation()
             let repository = PlayersRepositoryTestsImplementation()
-            let presenter = PlayersPresenterImplementation(playersRepository: repository)
+            let presenter = PlayersPresenterImplementation(teamIdentifier: "L1", playersRepository: repository)
             let presenterDelegate = PlayersPresenterDelegateImplementation()
             presenter.view = view
             presenter.delegate = presenterDelegate
             view.presenter = presenter
             
-            context("empty team") {
-                it("return all") {
-                    expect(view.players.count).to(equal(0))
-                }
-            }
-            
             context("select team L1") {
                 it("contains 3 elements") {
-                    presenter.set(teamIdentifier: "L1")
+                    presenter.didLoadView()
                     expect(presenter.players.count).to(equal(5))
                     expect(presenter.players[2].name).to(equal("P2"))
                     expect(view.players.count).to(equal(5))
@@ -43,14 +37,7 @@ class PlayersPresenterSpec: QuickSpec {
                     expect(presenterDelegate.selectedIdentifier).to(equal("1"))
                 }
             }
-            
-            context("retest empty team") {
-                it("return all") {
-                    presenter.set(teamIdentifier: nil)
-                    expect(view.players.count).to(equal(0))
-                }
-            }
-            
+                        
             context("inexistent element") {
                 it("return inexistent element error") {
                     

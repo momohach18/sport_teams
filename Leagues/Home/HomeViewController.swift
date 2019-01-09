@@ -13,6 +13,7 @@ protocol HomeView {
     func showTeamsView()
     func setLoadingIndicator(visible: Bool)
     func set(searchBarText: String)
+    func pushPlayersView()
 }
 
 class HomeViewController: UIViewController {
@@ -39,6 +40,9 @@ class HomeViewController: UIViewController {
         case "AutocompleteViewController":
             guard let autocompleteViewController = segue.destination as? AutocompleteViewController else { return }
             configure(autocompleteViewController: autocompleteViewController)
+        case "PlayersViewController":
+            guard let playersViewController = segue.destination as? PlayersViewController else { return }
+            configure(playersViewController: playersViewController)
         default:
             break
         }
@@ -61,6 +65,12 @@ class HomeViewController: UIViewController {
         presenter?.autocompletePresenter.view = autocompleteViewController
     }
     
+    func configure(playersViewController: PlayersViewController) {
+        guard let playersPresenter = presenter?.playersPresenter else { return }
+        playersViewController.presenter = playersPresenter
+        playersPresenter.view = playersViewController
+    }
+    
 }
 
 extension HomeViewController: HomeView {
@@ -79,6 +89,10 @@ extension HomeViewController: HomeView {
     func set(searchBarText: String) {
         searchBar.text = searchBarText
         view.endEditing(true)
+    }
+    
+    func pushPlayersView() {
+        performSegue(withIdentifier: "PlayersViewController", sender: self)
     }
     
 }

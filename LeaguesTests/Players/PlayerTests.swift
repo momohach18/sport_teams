@@ -17,36 +17,37 @@ class PlayerSpec: QuickSpec {
     override func spec() {
         describe("Player") {
             context("Nominal case") {
-                let teamJson = JsonFileReaded(fileName: "PlayerNominal").data
-                let team = try? JSONDecoder().decode(PlayerEntity.self, from: teamJson)
+                let playerJson = JsonFileReaded(fileName: "PlayerNominal").data
+                let player = try? JSONDecoder().decode(PlayerEntity.self, from: playerJson)
                 it("should be non nil") {
-                    expect(team).toNot(beNil())
+                    expect(player).toNot(beNil())
                 }
                 
                 it("should contain all fields") {
-                    expect(team?.identifier).to(equal("34145937"))
-                    expect(team?.name).to(equal("Mario Balotelli"))
-                    expect(team?.birthDate).to(equal("1990-08-12"))
-                    expect(team?.signingAmout).to(equal("£16,000,000"))
-                    expect(team?.headImageUrlString).to(equal("https://www.thesportsdb.com/images/media/player/cutout/43001238.png"))
-                    expect(team?.thumbnailImageUrlString).to(equal("https://www.thesportsdb.com/images/media/player/thumb/qqvuvq1431622719.jpg"))
+                    expect(player?.identifier).to(equal("34145937"))
+                    expect(player?.name).to(equal("Mario Balotelli"))
+                    expect(player?.birthDate).to(equal("1990-08-12"))
+                    expect(player?.signingAmout).to(equal("£16,000,000"))
+                    expect(player?.position).to(equal("Forward"))
+                    expect(player?.headImageUrlString).to(equal("https://www.thesportsdb.com/images/media/player/cutout/43001238.png"))
+                    expect(player?.thumbnailImageUrlString).to(equal("https://www.thesportsdb.com/images/media/player/thumb/qqvuvq1431622719.jpg"))
                 }
             }
             
             context("null optional fields") {
                 let leagueJson = JsonFileReaded(fileName: "PlayerNullFields").data
-                let team = try? JSONDecoder().decode(PlayerEntity.self, from: leagueJson)
+                let player = try? JSONDecoder().decode(PlayerEntity.self, from: leagueJson)
                 it("should be non nil") {
-                    expect(team).toNot(beNil())
+                    expect(player).toNot(beNil())
                 }
                 
                 it("should contain all fields") {
-                    expect(team?.identifier).to(equal("34145937"))
-                    expect(team?.name).to(equal("Mario Balotelli"))
-                    expect(team?.birthDate).to(beNil())
-                    expect(team?.signingAmout).to(beNil())
-                    expect(team?.headImageUrlString).to(beNil())
-                    expect(team?.thumbnailImageUrlString).to(beNil())
+                    expect(player?.identifier).to(equal("34145937"))
+                    expect(player?.name).to(equal("Mario Balotelli"))
+                    expect(player?.birthDate).to(beNil())
+                    expect(player?.signingAmout).to(beNil())
+                    expect(player?.headImageUrlString).to(beNil())
+                    expect(player?.thumbnailImageUrlString).to(beNil())
                 }
             }
         }

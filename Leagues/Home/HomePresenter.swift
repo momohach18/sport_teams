@@ -12,6 +12,7 @@ protocol HomePresenter: class {
     var autocompletePresenter: AutocompletePresenter { get }
     var teamsPresenter: TeamsPresenter { get }
     var leaguesRepository: LeaguesRepository { get }
+    var playersPresenter: PlayersPresenter? { get }
     var view: HomeView? { get }
     
     //MARK: Actions from view
@@ -27,6 +28,7 @@ class HomePresenterImplementation: HomePresenter {
     var leaguesRepository: LeaguesRepository
     var view: HomeView?
     fileprivate var leagues = [LeagueEntity]()
+    private var selectedTeamIdentifier: String?
     
     init(autocompletePresenter: AutocompletePresenter,
          teamsPresenter: TeamsPresenter,
@@ -42,6 +44,12 @@ class HomePresenterImplementation: HomePresenter {
     
     private func set(selectedLeague: LeagueEntity) {
         teamsPresenter.set(leagueIdentifier: selectedLeague.identifier)
+    }
+    
+    var playersPresenter: PlayersPresenter? {
+        guard let selectedTeamIdentifier = selectedTeamIdentifier else { return nil }
+        return PlayersPresenterImplementation(teamIdentifier: selectedTeamIdentifier,
+            playersRepository: PlayersRepositoryImplementation())
     }
 }
 
@@ -59,7 +67,8 @@ extension HomePresenterImplementation: AutocompletePresenterDelegate {
 //MARK:- TeamsPresenterDelegate
 extension HomePresenterImplementation: TeamsPresenterDelegate {
     func didSelectTeam(with identifier: String) {
-        
+        selectedTeamIdentifier = identifier
+        view?.pushPlayersView()
     }
 }
 

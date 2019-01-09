@@ -16,6 +16,7 @@ struct PlayerEntity: Decodable {
     let signingAmout: String?
     let headImageUrlString: String?
     let thumbnailImageUrlString: String?
+    let position: String?
     
     enum CodingKeys: String, CodingKey {
         case identifier = "idPlayer"
@@ -24,9 +25,10 @@ struct PlayerEntity: Decodable {
         case signingAmout = "strSigning"
         case headImageUrlString = "strCutout"
         case thumbnailImageUrlString = "strThumb"
+        case position = "strPosition"
     }
 }
 
 struct PlayersResponse: Decodable {
-    let players: [PlayerEntity]
+    let player: [PlayerEntity]
 }
