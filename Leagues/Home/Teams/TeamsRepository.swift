@@ -35,6 +35,4 @@ class TeamsRepositoryImplementation: TeamsRepository {
             completion(Result.value(teams))
         }
     }
-    
-    
 }
