@@ -20,7 +20,7 @@ protocol TeamsPresenter: class {
     
     func set(leagueIdentifier: String?)
     
-    //MARK: Interactions
+    //MARK: View Actions
     func didSelectTeam(at position: Int)
 }
 
@@ -70,10 +70,13 @@ class TeamsPresenterImplementation: TeamsPresenter {
         
     }
     
+    
+}
+
+//MARK:- View Actions
+extension TeamsPresenterImplementation {
     func didSelectTeam(at position: Int) {
         guard position < elements.count else { return }
         self.delegate?.didSelectTeam(with: elements[position].identifier)
     }
-    
-    
 }

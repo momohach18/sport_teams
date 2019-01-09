@@ -9,12 +9,17 @@
 import UIKit
 
 protocol PlayersView {
-    var teams: [PlayerViewModel] { get set }
+    func show(players: [PlayerViewModel])
     func setLoadingIndicator(visible: Bool)
 }
 
 struct PlayerViewModel {
-    
+    let identifier: String
+    let name: String
+    let birthDate: String?
+    let signingAmout: String?
+    let headImageUrlString: String?
+    let thumbnailImageUrlString: String?
 }
 
 class PlayersViewController: UIViewController {

@@ -48,6 +48,8 @@
 		FAF0C46B21E553D600A333F6 /* UIViewController+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */; };
 		FAF0C46D21E55F5100A333F6 /* PlayerNominal.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46C21E55F5100A333F6 /* PlayerNominal.json */; };
 		FAF0C46F21E55F6A00A333F6 /* PlayerNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */; };
+		FAF0C47121E566F200A333F6 /* PlayerTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */; };
+		FAF0C47321E56FC800A333F6 /* PlayersPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loader.swift"; sourceTree = "<group>"; };
 		FAF0C46C21E55F5100A333F6 /* PlayerNominal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlayerNominal.json; sourceTree = "<group>"; };
 		FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlayerNullFields.json; sourceTree = "<group>"; };
+		FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTestImplementations.swift; sourceTree = "<group>"; };
+		FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,8 @@
 				FA47716721E3603500A55DDF /* PlayerTests.swift */,
 				FAF0C46C21E55F5100A333F6 /* PlayerNominal.json */,
 				FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */,
+				FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */,
+				FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -546,8 +552,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF0C47121E566F200A333F6 /* PlayerTestImplementations.swift in Sources */,
 				FA47716821E3603500A55DDF /* PlayerTests.swift in Sources */,
 				FA47716621E3601B00A55DDF /* AutocompleteTests.swift in Sources */,
+				FAF0C47321E56FC800A333F6 /* PlayersPresenterTests.swift in Sources */,
 				FAF0C45521E3ACB700A333F6 /* JsonFileReader.swift in Sources */,
 				FA47715821E35EC900A55DDF /* TeamTests.swift in Sources */,
 				FAF0C46721E4C11F00A333F6 /* TeamsTestImplementations.swift in Sources */,
