@@ -52,3 +52,29 @@ class PlayersViewController: UIViewController, PlayersView, UICollectionViewDele
         presenter?.didSelectPlayer(at: indexPath.row)
     }
 }
+
+//MARK:- Layout
+extension PlayersViewController{
+    var collectionViewLayout: UICollectionViewFlowLayout {
+        return collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+    }
+    
+    func updateLayout(width: CGFloat) {
+        let layoutDescriptor = PlayersCollectionViewLayoutDescriptor(with: width)
+        collectionViewLayout.itemSize = layoutDescriptor.cellSize
+        collectionViewLayout.sectionInset = layoutDescriptor.insets
+        collectionViewLayout.minimumLineSpacing = layoutDescriptor.verticalSpacing
+        collectionViewLayout.minimumInteritemSpacing = layoutDescriptor.horizontalSpacing
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        updateLayout(width: self.view.frame.width)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        updateLayout(width: size.width)
+        collectionViewLayout.invalidateLayout()
+    }
+}

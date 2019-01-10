@@ -49,7 +49,7 @@
                             <constraint firstItem="jzk-eW-zE1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gq1-Sj-Cft"/>
                             <constraint firstItem="eZD-dc-gda" firstAttribute="top" secondItem="jzk-eW-zE1" secondAttribute="bottom" id="QQr-Gh-gQp"/>
                             <constraint firstItem="DSg-vS-GDJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QSY-bB-zFy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eZD-dc-gda" secondAttribute="bottom" id="Tqm-bp-Ptu"/>
+                            <constraint firstAttribute="bottom" secondItem="eZD-dc-gda" secondAttribute="bottom" id="Tqm-bp-Ptu"/>
                             <constraint firstItem="DSg-vS-GDJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VI1-rm-o1M"/>
                             <constraint firstItem="jzk-eW-zE1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xn3-Yw-ACi"/>
                             <constraint firstItem="DSg-vS-GDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xtD-3i-sqI"/>
@@ -94,7 +94,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-dR-RG4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-dR-RG4">
                                                     <rect key="frame" x="20" y="32" width="94" height="94"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="UZf-dR-RG4" secondAttribute="height" multiplier="1:1" id="6do-dN-B5S"/>
@@ -163,7 +163,7 @@
                         <constraints>
                             <constraint firstItem="yiL-VT-9gi" firstAttribute="leading" secondItem="S4C-4f-Hei" secondAttribute="leading" id="78Y-cG-kny"/>
                             <constraint firstItem="S4C-4f-Hei" firstAttribute="trailing" secondItem="yiL-VT-9gi" secondAttribute="trailing" id="7Bs-RE-Z6f"/>
-                            <constraint firstItem="S4C-4f-Hei" firstAttribute="bottom" secondItem="yiL-VT-9gi" secondAttribute="bottom" id="tQJ-TX-DIL"/>
+                            <constraint firstAttribute="bottom" secondItem="yiL-VT-9gi" secondAttribute="bottom" id="tQJ-TX-DIL"/>
                             <constraint firstItem="yiL-VT-9gi" firstAttribute="top" secondItem="S4C-4f-Hei" secondAttribute="top" id="xiD-Oa-vGK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S4C-4f-Hei"/>
@@ -185,18 +185,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-ef-Ffl">
-                                <rect key="frame" x="16" y="20" width="343" height="527"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" textLabel="im1-A7-Ida" style="IBUITableViewCellStyleDefault" id="Pgg-42-isg">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pgg-42-isg" id="nh9-l6-yzz">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="im1-A7-Ida">
-                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -214,10 +214,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eSP-ef-Ffl" firstAttribute="top" secondItem="qL9-P3-XAW" secondAttribute="topMargin" id="BOY-lT-P4Q"/>
-                            <constraint firstItem="eSP-ef-Ffl" firstAttribute="leading" secondItem="qL9-P3-XAW" secondAttribute="leadingMargin" id="dAk-W0-WA4"/>
+                            <constraint firstItem="eSP-ef-Ffl" firstAttribute="top" secondItem="qL9-P3-XAW" secondAttribute="top" id="BOY-lT-P4Q"/>
+                            <constraint firstItem="eSP-ef-Ffl" firstAttribute="leading" secondItem="qL9-P3-XAW" secondAttribute="leading" id="dAk-W0-WA4"/>
                             <constraint firstAttribute="bottomMargin" secondItem="eSP-ef-Ffl" secondAttribute="bottom" id="pWx-oK-ilb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eSP-ef-Ffl" secondAttribute="trailing" id="xHD-ZK-gou"/>
+                            <constraint firstAttribute="trailing" secondItem="eSP-ef-Ffl" secondAttribute="trailing" id="xHD-ZK-gou"/>
                         </constraints>
                     </view>
                     <connections>
@@ -237,7 +237,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EQu-WX-Ne3">
-                                <rect key="frame" x="16" y="20" width="343" height="527"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QNW-Or-Pyv">
                                     <size key="itemSize" width="125" height="147"/>
@@ -277,10 +277,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="EQu-WX-Ne3" secondAttribute="trailing" id="BCD-I8-Csz"/>
-                            <constraint firstItem="EQu-WX-Ne3" firstAttribute="top" secondItem="zJF-CU-mBe" secondAttribute="topMargin" id="KSG-hH-H74"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="EQu-WX-Ne3" secondAttribute="bottom" id="UIg-pl-lzv"/>
-                            <constraint firstItem="EQu-WX-Ne3" firstAttribute="leading" secondItem="zJF-CU-mBe" secondAttribute="leadingMargin" id="aTv-cV-ySl"/>
+                            <constraint firstAttribute="trailing" secondItem="EQu-WX-Ne3" secondAttribute="trailing" id="BCD-I8-Csz"/>
+                            <constraint firstItem="EQu-WX-Ne3" firstAttribute="top" secondItem="zJF-CU-mBe" secondAttribute="top" id="KSG-hH-H74"/>
+                            <constraint firstAttribute="bottom" secondItem="EQu-WX-Ne3" secondAttribute="bottom" id="UIg-pl-lzv"/>
+                            <constraint firstItem="EQu-WX-Ne3" firstAttribute="leading" secondItem="zJF-CU-mBe" secondAttribute="leading" id="aTv-cV-ySl"/>
                         </constraints>
                     </view>
                     <connections>

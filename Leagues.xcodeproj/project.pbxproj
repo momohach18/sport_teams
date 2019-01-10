@@ -51,6 +51,9 @@
 		FAF0C47121E566F200A333F6 /* PlayerTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */; };
 		FAF0C47321E56FC800A333F6 /* PlayersPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */; };
 		FAF0C47521E57BD900A333F6 /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */; };
+		FAF0C47821E7874600A333F6 /* CollectionViewLayoutDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47721E7874500A333F6 /* CollectionViewLayoutDescriptor.swift */; };
+		FAF0C47A21E7877600A333F6 /* TeamsCollectionViewLayoutDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47921E7877600A333F6 /* TeamsCollectionViewLayoutDescriptor.swift */; };
+		FAF0C47C21E78E5300A333F6 /* PlayersCollectionViewLayoutDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47B21E78E5300A333F6 /* PlayersCollectionViewLayoutDescriptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		FAF0C47221E56FC800A333F6 /* PlayersPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersPresenterTests.swift; sourceTree = "<group>"; };
 		FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAF0C47621E5927B00A333F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FAF0C47721E7874500A333F6 /* CollectionViewLayoutDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayoutDescriptor.swift; sourceTree = "<group>"; };
+		FAF0C47921E7877600A333F6 /* TeamsCollectionViewLayoutDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCollectionViewLayoutDescriptor.swift; sourceTree = "<group>"; };
+		FAF0C47B21E78E5300A333F6 /* PlayersCollectionViewLayoutDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersCollectionViewLayoutDescriptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,7 @@
 				FA47716121E35FCE00A55DDF /* PlayerEntity.swift */,
 				FA47716321E35FDB00A55DDF /* PlayersRepository.swift */,
 				FAF0C47421E57BD900A333F6 /* PlayerCollectionViewCell.swift */,
+				FAF0C47B21E78E5300A333F6 /* PlayersCollectionViewLayoutDescriptor.swift */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -257,6 +264,7 @@
 				FA47715921E35F4500A55DDF /* TeamEntity.swift */,
 				FA47715B21E35F7000A55DDF /* TeamsRepository.swift */,
 				FAF0C46821E51B8000A333F6 /* TeamCollectionViewCell.swift */,
+				FAF0C47921E7877600A333F6 /* TeamsCollectionViewLayoutDescriptor.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 				FA47716C21E3637600A55DDF /* Result.swift */,
 				FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */,
 				FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */,
+				FAF0C47721E7874500A333F6 /* CollectionViewLayoutDescriptor.swift */,
 			);
 			path = Commun;
 			sourceTree = "<group>";
@@ -530,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA47714C21E35BA900A55DDF /* AutocompleteViewController.swift in Sources */,
+				FAF0C47C21E78E5300A333F6 /* PlayersCollectionViewLayoutDescriptor.swift in Sources */,
 				FA47714A21E356A100A55DDF /* HomePresenter.swift in Sources */,
 				FA47715C21E35F7000A55DDF /* TeamsRepository.swift in Sources */,
 				FA47712821E34ED500A55DDF /* HomeViewController.swift in Sources */,
@@ -541,11 +551,13 @@
 				FAF0C46B21E553D600A333F6 /* UIViewController+Loader.swift in Sources */,
 				FA47715221E35BEE00A55DDF /* TeamsPresenter.swift in Sources */,
 				FAF0C45B21E3DC8E00A333F6 /* AutocompleteModel.swift in Sources */,
+				FAF0C47821E7874600A333F6 /* CollectionViewLayoutDescriptor.swift in Sources */,
 				FA47716021E35FBB00A55DDF /* LeaguesRepository.swift in Sources */,
 				FA47716221E35FCE00A55DDF /* PlayerEntity.swift in Sources */,
 				FA47716B21E361E500A55DDF /* Repository.swift in Sources */,
 				FA47715A21E35F4500A55DDF /* TeamEntity.swift in Sources */,
 				FA47715421E35C0B00A55DDF /* PlayersViewController.swift in Sources */,
+				FAF0C47A21E7877600A333F6 /* TeamsCollectionViewLayoutDescriptor.swift in Sources */,
 				FA47716D21E3637600A55DDF /* Result.swift in Sources */,
 				FAF0C46921E51B8000A333F6 /* TeamCollectionViewCell.swift in Sources */,
 				FA47712621E34ED500A55DDF /* AppDelegate.swift in Sources */,
