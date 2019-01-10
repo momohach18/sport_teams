@@ -11,6 +11,7 @@ import UIKit
 protocol TeamsView {
     func show(teams: [TeamViewModel])
     func setLoadingIndicator(visible: Bool)
+    func showError(title: String?, message: String)
 }
 
 struct TeamViewModel {

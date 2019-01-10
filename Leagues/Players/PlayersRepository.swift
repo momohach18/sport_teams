@@ -22,6 +22,12 @@ class PlayersRepositoryImplementation: PlayersRepository {
             return
         }
         Alamofire.request(url).responseData { dataResponse in
+            if case let .failure(error) = dataResponse.result,
+                (error as NSError).code == -1009
+            {
+                completion(Result.error(RepositoryError.network))
+                return
+            }
             guard let data = dataResponse.data else {
                 completion(Result.error(RepositoryError.technical))
                 return

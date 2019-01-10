@@ -67,7 +67,17 @@ class TeamsPresenterImplementation: TeamsPresenter {
     }
     
     private func handle(error: RepositoryError) {
-        
+        switch error {
+        case .network:
+            view?.showError(title: L10n.Error.Network.title,
+                            message: L10n.Error.Network.body)
+        case .technical:
+            view?.showError(title: L10n.Error.Technical.title,
+                            message: L10n.Error.Technical.body)
+        case .notfound:
+            view?.showError(title: L10n.Error.Notfound.title,
+                            message: L10n.Error.Notfound.Body.plural)
+        }
     }
     
     

@@ -6,6 +6,18 @@
   Copyright © 2019 MAH. All rights reserved.
 */
 
+"commun.ok" = "OK";
+
+"error.technical.title" = "Technical error";
+"error.technical.body" = "A technical error occured. Please try later.";
+
+"error.network.title" = "Network error";
+"error.network.body" = "Please check your network connection";
+
+"error.notfound.title" = "Not found";
+"error.notfound.body.single" = "The requested element is not found";
+"error.notfound.body.plural" = "The requested elements are not found";
+
 "player.birthdate" = "birthDate";
 "player.price" = "price";
 

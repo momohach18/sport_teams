@@ -44,7 +44,7 @@
 		FAF0C46521E4C0D500A333F6 /* TeamPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */; };
 		FAF0C46721E4C11F00A333F6 /* TeamsTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */; };
 		FAF0C46921E51B8000A333F6 /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46821E51B8000A333F6 /* TeamCollectionViewCell.swift */; };
-		FAF0C46B21E553D600A333F6 /* UIViewController+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */; };
+		FAF0C46B21E553D600A333F6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C46A21E553D600A333F6 /* UIViewController+Extensions.swift */; };
 		FAF0C46D21E55F5100A333F6 /* PlayerNominal.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46C21E55F5100A333F6 /* PlayerNominal.json */; };
 		FAF0C46F21E55F6A00A333F6 /* PlayerNullFields.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */; };
 		FAF0C47121E566F200A333F6 /* PlayerTestImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */; };
@@ -115,7 +115,7 @@
 		FAF0C46421E4C0D500A333F6 /* TeamPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPresenterTests.swift; sourceTree = "<group>"; };
 		FAF0C46621E4C11F00A333F6 /* TeamsTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTestImplementations.swift; sourceTree = "<group>"; };
 		FAF0C46821E51B8000A333F6 /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
-		FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loader.swift"; sourceTree = "<group>"; };
+		FAF0C46A21E553D600A333F6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		FAF0C46C21E55F5100A333F6 /* PlayerNominal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlayerNominal.json; sourceTree = "<group>"; };
 		FAF0C46E21E55F6A00A333F6 /* PlayerNullFields.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlayerNullFields.json; sourceTree = "<group>"; };
 		FAF0C47021E566F200A333F6 /* PlayerTestImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTestImplementations.swift; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 			children = (
 				FA47716C21E3637600A55DDF /* Result.swift */,
 				FAF0C45C21E3E8DE00A333F6 /* RepositoryError.swift */,
-				FAF0C46A21E553D600A333F6 /* UIViewController+Loader.swift */,
+				FAF0C46A21E553D600A333F6 /* UIViewController+Extensions.swift */,
 				FAF0C47721E7874500A333F6 /* CollectionViewLayoutDescriptor.swift */,
 			);
 			path = Commun;
@@ -561,7 +561,7 @@
 				FA47715E21E35F9D00A55DDF /* LeagueEntity.swift in Sources */,
 				FAF0C45D21E3E8DE00A333F6 /* RepositoryError.swift in Sources */,
 				FA47715021E35BDE00A55DDF /* TeamsViewController.swift in Sources */,
-				FAF0C46B21E553D600A333F6 /* UIViewController+Loader.swift in Sources */,
+				FAF0C46B21E553D600A333F6 /* UIViewController+Extensions.swift in Sources */,
 				FA47715221E35BEE00A55DDF /* TeamsPresenter.swift in Sources */,
 				FAF0C45B21E3DC8E00A333F6 /* AutocompleteModel.swift in Sources */,
 				FAF0C47821E7874600A333F6 /* CollectionViewLayoutDescriptor.swift in Sources */,

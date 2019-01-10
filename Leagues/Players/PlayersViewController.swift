@@ -11,6 +11,7 @@ import UIKit
 protocol PlayersView {
     func show(players: [PlayerViewModel])
     func setLoadingIndicator(visible: Bool)
+    func showError(title: String?, message: String)
 }
 
 struct PlayerViewModel {

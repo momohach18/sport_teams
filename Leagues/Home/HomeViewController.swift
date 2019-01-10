@@ -14,6 +14,7 @@ protocol HomeView {
     func setLoadingIndicator(visible: Bool)
     func set(searchBarText: String)
     func pushPlayersView()
+    func showError(title: String?, message: String)
 }
 
 class HomeViewController: UIViewController {
