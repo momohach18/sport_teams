@@ -7,6 +7,7 @@ target 'Leagues' do
   pod 'MBProgressHUD'
   pod 'Kingfisher'
   pod 'Alamofire'
+  pod 'SwiftGen'
   
   target 'LeaguesTests' do
     # Pods for testing

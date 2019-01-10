@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Leagues
+
+  Created by Macbook on 10/01/2019.
+  Copyright © 2019 MAH. All rights reserved.
+*/
+
+"player.birthdate" = "birthDate";
+"player.price" = "price";
+

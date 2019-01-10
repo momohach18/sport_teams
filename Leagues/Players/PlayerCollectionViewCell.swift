@@ -18,8 +18,8 @@ class PlayerCollectionViewCell: UICollectionViewCell {
     func configure(with viewModel: PlayerViewModel) {
         nameLabel.text = viewModel.name
         positionLabel.text = viewModel.position
-        birthDateLabel.text = "birthDate: \(viewModel.birthDate ?? "")"
-        priceLabel.text = "price: \(viewModel.signingAmout ?? "")"
+        birthDateLabel.text = "\(L10n.Player.birthdate): \(viewModel.birthDate ?? "")"
+        priceLabel.text = "\(L10n.Player.price): \(viewModel.signingAmout ?? "")"
         guard let imageUrlString = viewModel.imageUrlString else { return }
         let url = URL(string: imageUrlString)
         imageView.kf.setImage(with: url)
