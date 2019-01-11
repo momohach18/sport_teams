@@ -12,6 +12,8 @@ import Foundation
 
 class TeamsViewTestImplementation: TeamsView {
     var isLoading = false
+    var errorTitle: String?
+    var errorMessage: String?
     
     func setLoadingIndicator(visible: Bool) {
         isLoading = visible
@@ -26,6 +28,11 @@ class TeamsViewTestImplementation: TeamsView {
     
     func selectElement(at position: Int) {
         presenter.didSelectTeam(at: position)
+    }
+    
+    func showError(title: String?, message: String) {
+        errorTitle = title
+        errorMessage = message
     }
 }
 

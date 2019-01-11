@@ -12,6 +12,8 @@ import Foundation
 
 class PlayersViewTestImplementation: PlayersView {
     var isLoading = false
+    var errorTitle: String?
+    var errorMessage: String?
     
     func setLoadingIndicator(visible: Bool) {
         isLoading = visible
@@ -26,6 +28,11 @@ class PlayersViewTestImplementation: PlayersView {
     
     func selectElement(at position: Int) {
         presenter.didSelectPlayer(at: position)
+    }
+    
+    func showError(title: String?, message: String) {
+        errorTitle = title
+        errorMessage = message
     }
 }
 
