@@ -16,19 +16,18 @@ protocol TeamsRepository {
 
 
 class TeamsRepositoryImplementation: TeamsRepository {
+    let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "www.apple.com")
     func getElements(with leagueIdentifier: String,
                      completion: @escaping (Result<[TeamEntity], RepositoryError>) -> ()) {
         guard let url = URL(string: "https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id=\(leagueIdentifier)") else {
             completion(Result.error(RepositoryError.technical))
             return
         }
+        guard reachabilityManager?.isReachable == true else {
+            completion(Result.error(RepositoryError.network))
+            return
+        }
         Alamofire.request(url).responseData { dataResponse in
-            if case let .failure(error) = dataResponse.result,
-                (error as NSError).code == -1009
-            {
-                completion(Result.error(RepositoryError.network))
-                return
-            }
             guard let data = dataResponse.data else {
                 completion(Result.error(RepositoryError.technical))
                 return

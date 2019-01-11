@@ -14,18 +14,17 @@ protocol LeaguesRepository {
 }
 
 class LeaguesRepositoryImplementation: LeaguesRepository {
+    let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "www.apple.com")
     func getAllElements(completion: @escaping (Result<[LeagueEntity], RepositoryError>) -> ()) {
         guard let url = URL(string: "https://www.thesportsdb.com/api/v1/json/1/all_leagues.php") else {
             completion(Result.error(RepositoryError.technical))
             return
         }
+        guard reachabilityManager?.isReachable == true else {
+            completion(Result.error(RepositoryError.network))
+            return
+        }
         Alamofire.request(url).responseData { dataResponse in
-            if case let .failure(error) = dataResponse.result,
-                (error as NSError).code == -1009
-                {
-                    completion(Result.error(RepositoryError.network))
-                    return
-            }                
             guard let data = dataResponse.data else {
                 completion(Result.error(RepositoryError.technical))
                 return
