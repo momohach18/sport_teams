@@ -14,3 +14,8 @@ Modules communucate using presenters like shown on the diabgram
 Repositories are the model layer access points.
 ## Unit tests
 Nimble and Quick are used for unit tests. Fake test implementations are used for unit testing presenters.
+
+## What to do next?
+* HomeViewController contains a lot of instantiation code and wiring of MVP components. It's not the role of a view controller. So next we need an object that inject those dependencies. It may be a router that creates modules and manage navigation.
+* Repositories contain a lot of common code. So maybe create protocol repository that does the common stuff.
+

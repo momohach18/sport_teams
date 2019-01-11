@@ -198,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF0C47F21E7978F00A333F6 /* Resources */,
-				FA47716921E361B100A55DDF /* Commun */,
+				FA47716921E361B100A55DDF /* Common */,
 				FA47714521E3553300A55DDF /* Home */,
 				FA47714621E3555300A55DDF /* Players */,
 				FA47712521E34ED500A55DDF /* AppDelegate.swift */,
@@ -272,7 +272,7 @@
 			path = Teams;
 			sourceTree = "<group>";
 		};
-		FA47716921E361B100A55DDF /* Commun */ = {
+		FA47716921E361B100A55DDF /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				FA47716C21E3637600A55DDF /* Result.swift */,
@@ -280,7 +280,7 @@
 				FAF0C46A21E553D600A333F6 /* UIViewController+Extensions.swift */,
 				FAF0C47721E7874500A333F6 /* CollectionViewLayoutDescriptor.swift */,
 			);
-			path = Commun;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FAF0C45021E3AA7200A333F6 /* Leagues */ = {
